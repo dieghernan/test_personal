@@ -97,7 +97,7 @@ comments:
 #   "brand" options would be set on the left side of your navbar
 #   "nav" would be set on the right side. Two-level nav links available
 navbar:
-  style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
+  style     :  fab #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
   expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
     title   :  Home # Title in navbar
@@ -147,7 +147,7 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight     :  # default["default"]
-  skin         :  # Optional predefined skins
+  skin         :  mytheme # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :    
     primary     : "lightskyblue" #default ["#007bff"] - Bootstrap blue
@@ -260,7 +260,8 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: expanded # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  sourcemap: never
   quiet_deps: true
   silence_deprecations:
     - import

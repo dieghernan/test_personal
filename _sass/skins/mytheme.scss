@@ -1,0 +1,39 @@
+// MyTheme (heavily modified Navi)
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+$headings-font-family: 'Sora', 'Roboto' !default;
+$font-family-base: 'Sora', 'Roboto' !default;
+
+
+$primary: #BA2D0B !default;
+$secondary: #0B3142 !default;
+$success: #5A9367 !default;
+$info: #4ADBC8 !default;
+$warning: #FFBA08 !default;
+$danger: #D42300 !default;
+$dark: #030D11 !default;
+$light: #ebf3f7 !default;
+$white: #ffffff !default;
+
+$body-color: $dark !default;
+
+// Navbar
+$navbar-chulapa-bg-color: $secondary !default;
+$navbar-chulapa-text-color: $white !default;	
+$navbar-chulapa-hover-color: $primary !default;
+$navbar-chulapa-active-color: $warning !default; //not working!
+
+$thead-chulapa-bg-color: $secondary !default;
+
+$footer-chulapa-link-color: $warning !default;
+$footer-chulapa-hover-color: yellow; //test!
+
+.card.bg-primary, .card.bg-secondary {
+  color: $white;
+}
+
+// This can be also in css custom, here it should be with important rule
+.navbar-chulapa-fab .nav-link:hover {
+    color: greenyellow !important;
+}
